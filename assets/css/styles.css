@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background-image: url("../../assets/img/background.png");
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  background-size: cover;
+  -webkit-tap-highlight-color: transparent;
+}
+
+p {
+  margin-top: 40px;
+  margin-bottom: 1rem;
+  font-size: 40px;
+  font-weight: 700;
+}
+
