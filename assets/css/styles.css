@@ -1,3 +1,12 @@
+@media (min-width: 300px) {
+  p {
+    margin-top: 40px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
 body {
   margin: 0;
   background-image: url("../../assets/img/background.png");
@@ -9,14 +18,25 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  background-size: cover;
   -webkit-tap-highlight-color: transparent;
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
 }
 
-p {
-  margin-top: 40px;
-  margin-bottom: 1rem;
-  font-size: 40px;
-  font-weight: 700;
+@media (min-width: 1200px) {
+  img, svg {
+    vertical-align: middle;
+    width: 100px;
+  }
+}
+
+@media (min-width: 300px) {
+  span {
+    background-color: rgba(255,255,255,0.5);
+    border-color: rgba(0,0,0,0.1);
+    border-width: 2px;
+    width: 0px;
+    font-size: 10px;
+  }
 }
 
