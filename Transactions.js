@@ -1,14 +1,22 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import {
+    getFirestore,
+    doc,
+    setDoc,
+    getDoc,
+    getDocs,
+    query,
+    where,
+    addDoc,
+    collection,
+    Timestamp,
+} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 const firebaseConfig = {
     apiKey: "AIzaSyBjYyfyurWI-wO-ROh75EukWscwW0sB-TA",
     authDomain: "gaming-search-website.firebaseapp.com",
+    databaseURL: "https://gaming-search-website-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "gaming-search-website",
     storageBucket: "gaming-search-website.appspot.com",
     messagingSenderId: "1010929731935",
@@ -17,6 +25,18 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+async function search_bar(){
+    const search = document.getElementById('search').value;
+    const snapshot = db.collection('Gamedetails').doc(search);
+    const doc = await snapshot.get();
+    if(doc.exists){
+        console.log("found");
+    }
+    else{
+        console.log("not found");
+    }
+}
 

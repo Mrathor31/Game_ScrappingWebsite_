@@ -22,9 +22,9 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="height: 100px;">
         <div class="container">
-            <img src="assets/img/epic-games.png" style="width: 100px;" id="epic" onclick="Changeepic()">
-            <img src="assets/img/gog_logo.png" style="width: 70px;" id="gog" onclick="Changegog()">
-            <img src="assets/img/steam_logo.png" style="width: 70px;margin-right: inherit;" id="steam" onclick="Changesteam()">
+            <img src="assets/img/epic-games.png" style="width: 100px;" id="epic" onclick="ChangeEpic()">
+            <img src="assets/img/gog_logo.png" style="width: 70px;" id="gog" onclick="ChangeGog()">
+            <img src="assets/img/steam_logo.png" style="width: 70px;margin-right: inherit;" id="steam" onclick="ChangeSteam()">
         </div>
     </nav>
     <div class="container-fluid py-5">
@@ -34,7 +34,7 @@
                         alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para1" class="hover-3-description fw-light mb-0">COD Advanced Warfare<br><a href="https://www.callofduty.com/advancedwarfare">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                         alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para2" class="hover-3-description fw-light mb-0">Company of heroes 3<br><a href="https://www.companyofheroes.com/">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="three-img" src="./More-images/epic/cyberpunk.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para3" class="hover-3-description fw-light mb-0">Cyberpunk<br><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="four-img" src="./More-images/epic/detroit.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para4" class="hover-3-description fw-light mb-0">Detroit<br><a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="five-img" src="./More-images/epic/fallout.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para5" class="hover-3-description fw-light mb-0">Fallout<br><a href="https://fallout.bethesda.net/en/buy-now">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="six-img" src="./More-images/epic/farcry-6.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para6" class="hover-3-description fw-light mb-0">Farcry 6<br><a href="https://store.epicgames.com/en-US/p/far-cry-6">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="seven-img" src="./More-images/epic/fifa-23.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para7" class="hover-3-description fw-light mb-0">Fifa-23<br><a href="https://store.epicgames.com/en-US/p/fifa-23">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="eight-img" src="./More-images/epic/forza.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para8" class="hover-3-description fw-light mb-0">Forza Horizon 5<br><a href="https://forza.net/">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                         alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para9" class="hover-3-description fw-light mb-0">Goat Simulator 3<br><a href="https://store.epicgames.com/en-US/p/goat-simulator-3">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="ten-img" src="./More-images/epic/god-of-war.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para10" class="hover-3-description fw-light mb-0">God of war<br><a href="https://store.epicgames.com/en-US/p/god-of-war">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="eleven-img" src="./More-images/epic/hogwarts.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para11" class="hover-3-description fw-light mb-0">Hogwarts<br><a href="https://store.epicgames.com/en-US/p/hogwarts-legacy">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="twelve-img" src="./More-images/epic/NFS-Unbound.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para12" class="hover-3-description fw-light mb-0">NFS Unbound<br><a href="https://store.epicgames.com/en-US/p/need-for-speed-unbound">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -157,7 +157,7 @@
                         alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para13" class="hover-3-description fw-light mb-0">Red Dead Redemption 2<br><a href="https://store.epicgames.com/en-US/p/red-dead-redemption-2">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                         alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para14" class="hover-3-description fw-light mb-0">Sons of the forest<br><a href="https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                         alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para15" class="hover-3-description fw-light mb-0">Assassin's Creed<br><a href="https://store.epicgames.com/en-US/p/assassins-creed-valhalla">Click here to get the link...</a></p>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                 <div class="hover hover-3 text-white rounded"><img id="sixteen-img" src="./More-images/epic/battlefield.jpg" alt="image">
                     <div class="hover-overlay"></div>
                     <div class="hover-3-content px-5 py-4">
-                        <p class="hover-3-description fw-light mb-0"></p>
+                        <p id="para16" class="hover-3-description fw-light mb-0">Battlefield 2042<br><a href="https://store.epicgames.com/en-US/p/battlefield-2042">Click here to get the link....</a></p>
                     </div>
                 </div>
             </div>

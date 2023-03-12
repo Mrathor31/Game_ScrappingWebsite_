@@ -1,15 +1,15 @@
 .client-section {
   padding: 10px;
-  background-color: #000000;
+  background-image:linear-gradient(130deg,#661467,#290317);
   border-bottom: initial;
 }
 
 .client-heading {
-  color: #ffffff;
-  font-size: 10px;
+  color: #c8c5c5;
+  font-size: 15px;
   padding-top: 20px;
   font-family: Lato, sans-serif;
-  font-weight: 300;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -102,5 +102,17 @@
   margin-left: 0;
   padding-left: 0px;
   height: auto;
+}
+
+.more{
+  color: #0b0c13;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.914);
+  text-decoration: underline;
+}
+
+.more:hover{
+  background-image: linear-gradient(120deg, #5a1111, #a30b0b);
+  color: #000000;
 }
 

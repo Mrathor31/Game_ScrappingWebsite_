@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -20,12 +19,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
-
 <body>
     <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="height: 100px;">
         <div class="container">
             <div class="d-flex justify-content-center h-100">
-                <div class="searchbar"><input type="text" class="search_input" placeholder="Search..."><a class="search_icon" href="#"><i class="fas fa-search"></i></a></div>
+                <div class="searchbar"><input id="search" type="search" class="search_input" placeholder="Search..." onclick="search_bar()"><a class="search_icon" href="#"><i class="fas fa-search"></i></a></div>
             </div>
             <img src="assets/img/epic-games.png" style="width: 90px;" id="epic" onclick="Changetoepic()">
             <img src="assets/img/gog_logo.png" style="width: 70px;"  id="gog" onclick="Changetogog()">
@@ -41,47 +39,45 @@
                 <div class="row d-flex justify-content-center client-row">
                     <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-start no-pad">
                         <div><img class="img-fluid client-image" src="./Images/assassin's.jpeg" id="img1">
-                                <h3 class="text-center client-heading"></h3>
+                                <h3 id="head1" class="text-center client-heading">Assassin's Creed<br><a href="https://store.epicgames.com/en-US/p/assassins-creed-valhalla">Link...</a></h3>
                             </a></div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-start no-pad">
-                        <div><a href="#"></a><img class="img-fluid client-image" src="./Images/cyberpunk.webp" id="img2">
-                            <h3 class="text-center client-heading"></h3>
+                        <div><img class="img-fluid client-image" src="./Images/cyberpunk.webp" id="img2">
+                            <h3 id="head2" class="text-center client-heading">Cyberpunk<br><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Link...</a></h3>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-start no-pad">
-                        <div><a href="#"></a><img class="img-fluid client-image" src="./Images/GTA5.jpeg" id="img3">
-                            <h3 class="text-center client-heading"></h3>
+                        <div><img class="img-fluid client-image" src="./Images/GTA5.jpeg" id="img3">
+                            <h3 id="head3" class="text-center client-heading">GTA 5<br><a href="https://store.epicgames.com/en-US/p/grand-theft-auto-v">Link...</a></h3>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-start no-pad">
-                        <div><a href="#"></a><img class="img-fluid client-image" src="./Images/jedi.png" id="img4">
-                            <h3 class="text-center client-heading"></h3>
+                        <div><img class="img-fluid client-image" src="./Images/ridersrepublic.jpg" id="img4">
+                            <h3 id="head4" class="text-center client-heading">Riders republic<br><a href="https://store.epicgames.com/en-US/p/riders-republic">Link...</a></h3>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-start no-pad">
-                        <div><a href="#"></a><img class="img-fluid client-image" src="./Images/Readdead.jpg" id="img5">
-                            <h3 class="text-center client-heading"></h3>
+                        <div><img class="img-fluid client-image" src="./Images/Readdead.jpg" id="img5">
+                            <h3 id="head5" class="text-center client-heading">read dead redemption 2<br><a href="https://store.epicgames.com/en-US/p/red-dead-redemption-2">Link...</a></h3>
                         </div>
                     </div>
                     <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-start no-pad">
-                        <div><a href="#"></a><img class="img-fluid client-image" src="./Images/ridersrepublic.jpg" id="img6">
-                            <h3 class="text-center client-heading"></h3>
+                        <div><img class="img-fluid client-image" src="./Images/the-cycle-frontier.jpg" id="img6">
+                            <h3 id="head6" class="text-center client-heading">The cycle frontier<br><a href="https://store.epicgames.com/en-US/p/thecycle--prime-time-bundle">Link...</a></h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><a id="more-games" href="./Moregame.html" style="color: #12144f;font-size: 20px;background-color: rgba(255,255,255,0.44);margin-top: 0px;text-decoration: underline;">More Games.....</a>
+    </section><a id="more-games" class="more" href="./Moregame.html">More Games.....</a>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/--mp---Multiple-items-slider-responsive-test-1.js"></script>
+    <!-- <script src="assets/js/--mp---Multiple-items-slider-responsive-test-1.js"></script>
     <script src="assets/js/--mp---Multiple-items-slider-responsive-test.js"></script>
-    <script src="assets/js/Carousel-Multi-Image--ISA--carousel-multi.js"></script>
-    <script src="assets/js/GradeJS-the-preview-image-do-not-reflect-the-effect-grade.js"></script>
-    <script src="assets/js/GradeJS-the-preview-image-do-not-reflect-the-effect-main.js"></script>
     <script src="assets/js/responsive-blog-card-slider-01-swiper-bundle.min.js"></script>
-    <script src="assets/js/responsive-blog-card-slider-02-responsive-blog-card-slider.js"></script>
-    <script src="./Functionality.js"></script>
+    <script src="assets/js/responsive-blog-card-slider-02-responsive-blog-card-slider.js"></script> -->
+    <script src="./Scripts/Functionality.js"></script>
+    <script src="./Transactions.js"></script>
 </body>
 
 </html>
